@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon matMenu="matMenu">menu</mat-icon>
+  </button>
+  <!--TODO Place in different component -->
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>menu_book</mat-icon>
+      <span>New Story</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>folder_open</mat-icon>
+      <span>Open Story</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>save</mat-icon>
+      <span>Save Story</span>
+    </button>
+    <hr />
+    <button mat-menu-item>
+      <mat-icon>import_export</mat-icon>
+      <span>Export Stroy</span>
+    </button>
+    <hr />
+    <button mat-menu-item>
+      <mat-icon>colorize</mat-icon>
+      <span>Choose Theme</span>
+    </button>
+  </mat-menu>
+
+  <!--TODO Change this dynamically-->
+  <section style="width: 100%;" class="justify-content-lg-center">
+    Character
+  </section>
+
+  <!--TODO Take a look at what these could be possibly-->
+  <button mat-icon-button aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
